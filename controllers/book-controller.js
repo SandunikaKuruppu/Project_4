@@ -72,7 +72,6 @@ exports.updateBookById = async  (req, res)=>{
     const {id} = req.params;
     const {data} = req.body;
 
-
     const updatedBook = await BookModel.findOneAndUpdate({
         _id: id,
     },
